@@ -1,0 +1,45 @@
+#File: ps3pr1.txt
+#Author: Wadner Simon (casseus@bu.edu), 7/12/22
+#Description: Writing more functions that don't involve recursion
+#
+
+
+
+
+Problem Set 3, Problem 1 - Tracing Recursion
+
+1-1: mystery(a,b)
+
+  a  |  b
+-------------
+  0  |  9  
+     
+     return 8
+     
+
+
+    mystery(a,b)
+
+	  a  |  b
+	-------------
+	  1  |  7  
+
+		return 15
+     	
+# add more stack frames as needed
+
+    mystery(a,b)
+
+	  a  |  b
+	-------------
+	  2  |  5   
+
+		return 24
+
+    mystery(a,b)
+
+	  a  |  b
+	-------------
+	  3  |  3   
+
+		return 24

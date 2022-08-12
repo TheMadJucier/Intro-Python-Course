@@ -1,0 +1,33 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Sat Aug  6 22:26:27 2022
+
+@author: csimo
+"""
+
+class Board:
+    def __init__(self, height,width):
+        """a constructor for board objects"""
+        self.height = height
+        self.width = width
+        self.slots = [[" "]] * width for r in range(height)]
+        
+    def __repr__ (self):
+        """ Returns a string representation for a Board object 
+        """
+        s = ''         # begin with an empty string
+    
+        # add one row of slots at a time
+        for row in range(self.height):
+            s += '|'   # one vertical bar at the start of the row
+    
+        for col in range(self.width):
+            s += self.slots[row][col] + '|'
+    
+        s += '\n'  # newline at the end of the row
+    
+        # Add code here for the hyphens at the bottom of the board
+        # and the numbers underneath it.
+    
+    
+        return s

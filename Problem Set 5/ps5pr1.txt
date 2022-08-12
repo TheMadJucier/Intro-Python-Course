@@ -1,0 +1,43 @@
+Problem Set 5, Problem 1 - Tracing List Comprehensions
+
+#
+#ps5pr1: Tracing List Comprehension
+#Wadner Simon: 7/19/22
+#casseus@bu.edu
+
+1-1
+
+ y     |      lc
+ -----------------------
+    0  | [0,    
+    1  | [0,2,
+    2  | [0,2,4,
+    3  | [0,2,4,6,
+    4  | [0,2,4,6,8]    
+       
+       
+       
+       
+1-2
+global variables
+
+  x  |  y
+-------------
+  4  |  2   
+  4  |  3
+  18 |  3
+       
+
+local variables (ones that belong to mystery)
+
+  x  |  y  | lc
+------------------
+  2  |  0,1| [0,3]    
+  4  | 0,1,2,3 | [0,3,6,9]
+     
+     
+
+output (the lines printed by the program)
+4 2
+4 3
+18 3
